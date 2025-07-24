@@ -1,0 +1,74 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "Crab Documentation",
+  "logo": {
+    "dark": "/logo/dark.svg",
+    "light": "/logo/light.svg"
+  },
+  "favicon": "/favicon.svg",
+  "colors": {
+    "primary": "#b81e37",
+    "light": "#b81e37",
+    "dark": "#b81e37",
+    "anchors": {
+      "from": "#572626",
+      "to": "#b81e37"
+    }
+  },
+  "topbarLinks": [
+    {
+      "name": "Email Us",
+      "url": "mailto:hi@tropicalsys.com"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Support Server",
+    "url": "https://discord.gg/8XScx8MNfE"
+  },
+  "navigation": [
+    {
+      "group": "Get Started",
+      "pages": [
+        "introduction",
+        "installation",
+        "faq"
+      ]
+    },
+    {
+      "group": "Modules",
+      "pages": [
+        "modules/shift-mgmt",
+        "modules/records",
+        "modules/reports",
+        "modules/staff-mgmt"
+      ]
+    },
+    {
+      "group": "Legal",
+      "pages": [
+        "legal/tos",
+        "legal/privacy",
+        "legal/exclusion",
+        "legal/data-removal"
+      ]
+    }
+  ],
+  "topAnchor": {
+    "name": "Documentation",
+    "icon": "book-open"
+  },
+  "anchors": [
+    {
+      "name": "Status Page",
+      "color": {
+        "from": "#572626",
+        "to": "#b81e37"
+      },
+      "icon": "signal-bars",
+      "url": "https://example.com"
+    }
+  ],
+  "footerSocials": {
+    "discord": "https://discord.gg/8XScx8MNfE"
+  }
+}
