@@ -3,7 +3,7 @@ title: 'Shift Management'
 description: "Easily log your department personnel's shifts with our shift logging system!"
 ---
 
-## Configuration
+##  Configuration
 To begin the configuration, please open the dropdown menu and select **"Shift Management"**.
 <Tabs>
   <Tab title="Configure Shift Logging">
@@ -27,6 +27,26 @@ To begin the configuration, please open the dropdown menu and select **"Shift Ma
   </Tab>
 </Tabs>
 
-## Using the Module
+##  Using the Module
 
-To start a shift, utilize the `/shift manage` command. 
+| Command        | Description                                                            |                   
+| -------------- | ---------------------------------------------------------------------- |
+| `/shift manage`| Allows department personnel to manage their shift                      |
+| `/shift active`| Displays online and on break personnel.                                |
+| `/shift admin` | Allows department High Commanders to manage other personnel's shifts.  |
+
+
+### Using `/shift manage`
+When you type in the command `/shift manage`, you will get an **optional** option to select a shift type. You can choose **one** shift type from the list provided. If your department doesn't allow the shift type you selected, the command will not allow the shift type to be selected.
+<Tip>If you do not select a shift type, it will set the shift type to **Default**.</Tip>
+
+### Using `/shift active`
+When you run the command `/shift active`, it will display two embeds: one for **Active Personnel** and one for **On Break Personnel**. It will display all personnel that are either **On Duty** or **On Break** in their respective embed.
+
+### Using `/shift admin`
+When you run the command `shift admin`, it will output an embed with the option to select a user. When you select a user, and if the user has a department personnel role, it will display another embed that will allow you to manage their shift in many ways. Those ways being:
+> - **Edit Shift Time**
+> - **Remove a Shift**
+> - **Change their Shift Status**
+
+<Warning>Each Sunday, all shifts are cleared. We are planning on adding customization for this in the coming weeks.</Warning>
