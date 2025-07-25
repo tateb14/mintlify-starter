@@ -30,8 +30,7 @@
       "group": "Get Started",
       "pages": [
         "introduction",
-        "installation",
-        "faq"
+        "installation"
       ]
     },
     {
@@ -50,6 +49,14 @@
         "legal/privacy",
         "legal/exclusion",
         "legal/data-removal"
+      ]
+    },
+    {
+      "group": "Miscellaneous",
+      "pages": [
+        "misc/faq",
+        "misc/changelog",
+        "misc/beta"
       ]
     }
   ],
