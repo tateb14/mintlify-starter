@@ -2,3 +2,48 @@
 title: 'Department Reports'
 description: 'Learn about the simple report system for department employee use with Crab.'
 ---
+##  Configuration
+To begin the configuration, please open the dropdown menu and select **"Reports"**.
+<Tabs>
+  <Tab title="Configure Report Logging">
+    The **Report Logging** configuration will have you select the channel to which all logs will be sent in regards to the reports created by the department personnel.
+
+    To configure this, simply select the select menu that says **"Report Logging"** when the **Reports** configuration embed has appeared. Then, select the channel you wish to use as your report logging channel.
+    <Tip>If you cannot see the channel you are looking for, try typing it in. Discord limits the amount of channels displayed on the select menu dropdown.</Tip>
+  </Tab>
+</Tabs>
+
+##  Using the Module
+
+| Command        | Description                                                                    |                   
+| -------------- | --------------------------------------------------------------------------     |
+| `/report create` | Open our report creation panel and specify what type of report you wish to create. |
+| `/report search`| Search a report using an identification string and display the information of it.   |
+| `/report void`  | Allows department **high commanders** to void (delete) a report.  |
+
+### Using `/report create`
+When you run the `/report create` command, a panel will appear which will allow you to begin creating your report. This panel will display three (3) types of reports dependent on the department type.
+**Law Enforcement**
+> - Accident Report
+> - Scene Report
+> - Incident Report
+
+**Fire and Medical**
+> - Accident Report
+> - Fire Report
+> - Medical Report
+
+**Department of Transportation**
+> - Accident Report
+> - Tow Report
+> - Repair Report
+
+Simply select which report to fill out and then a form will appear. In this form, you will need to fill out a description of the report. For example, you will need to write a description for the accident report. Once filed, it will be sent to be review by a department **supervisor** or above.
+
+### Using `/report search`
+When you run the command `/record search` you will be asked to provide a `report-id`. You can find this id in the report log.
+<Info>We have plans to add the ability to search via the member in the near future..</Info>
+
+### Using `/report void`
+When voiding a punishment using `/report void`, you are **required** to provide the report identification string. Once you run the command, the report will be deleted.
+<Warning>This command has no confirmation and once the report is voided, it cannot be accessed again.</Warning>

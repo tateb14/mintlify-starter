@@ -2,3 +2,45 @@
 title: 'Public Records'
 description: 'Learn about the amazing record system for all your needs with Crab.'
 ---
+<Warning>This module is restricted to **Law Enforcement** departments.</Warning>
+##  Configuration
+To begin the configuration, please open the dropdown menu and select **"Record Management"**.
+<Tabs>
+  <Tab title="Configure Record Logging">
+    The **Record Logging** configuration will have you select the channel to which all logs will be sent in regards to the records created by the department personnel.
+
+    To configure this, simply select the select menu that says **"Record Logging"** when the **Record Management** configuration embed has appeared. Then, select the channel you wish to use as your record logging channel.
+    <Tip>If you cannot see the channel you are looking for, try typing it in. Discord limits the amount of channels displayed on the select menu dropdown.</Tip>
+  </Tab>
+</Tabs>
+
+##  Using the Module
+
+| Command        | Description                                                                    |                   
+| -------------- | --------------------------------------------------------------------------     |
+| `/record create` | Creates a record which will be sent for approval by a department supervisor. |
+| `/record search`| Allows officers to search for records by using the suspect's Roblox Username   |
+| `/record void`  | Allows department **high commanders** to void (delete) a record.  |
+
+### Using `/record create`
+When you type in the command `/record create`, you will get three (3) **required** options:
+> - `suspect-username`
+>   - This will gather a list of all roblox usernames and display then as you type.
+> - `record-type`
+> - `charges`
+
+And you will also get three (3) **optional** options:
+> - `armed`
+> - `dangerous`
+> - `mentally-ill`
+
+<Tip>When you select each suspect flag, it will allow you to select if the bot should apply the flag to the record. These are made to enhance the roleplay experience and should not be used in a harassing manner.</Tip>
+When you input all this information, an embed will be generated and sent to the logging channel and will be pending review. A department **supervisor** or above can then approve or deny the record. The officer who made the record will be DMed when the record was reviewed.
+
+### Using `/record search`
+When you run the command `/record search` you will be asked to provide a `suspect-username`. This user will populate with the usernames fetched from Roblox as you type.
+<Info>You will have to type the **full username** before it will populate.</Info>
+
+### Using `/record void`
+When voiding a punishment using `/record void`, you are **required** to provide the record identification string. Once you run the command, the record will be deleted.
+<Warning>This command has no confirmation and once the record is voided, it cannot be accessed again.</Warning>

@@ -2,3 +2,54 @@
 title: 'Staff Management'
 description: 'Discover the easy to use staff management system with Crab.'
 ---
+
+##  Configuration
+To begin the configuration, please open the dropdown menu and select **"Staff Management"**.
+<Tabs>
+  <Tab title="Configure Punishment Logging">
+    The **Punishment Logging** configuration will have you select the channel to which all logs will be sent in regards to the disciplinary actions inside the department.
+
+    To configure this, simply select the select menu that says **"Punishment Logging"** when the **Staff Management** configuration embed has appeared. Then, select the channel you wish to use as your punishment logging channel.
+    <Tip>If you cannot see the channel you are looking for, try typing it in. Discord limits the amount of channels displayed on the select menu dropdown.</Tip>
+  </Tab>
+  <Tab title="Configure Promotion Logging">
+       The **Promotion Logging** configuration will have you select the channel to which all logs will be sent in regards to the promotion actions inside the department.
+
+    To configure this, simply select the select menu that says **"Promotion Logging"** when the **Staff Management** configuration embed has appeared. Then, select the channel you wish to use as your promotion logging channel.
+    <Tip>If you cannot see the channel you are looking for, try typing it in. Discord limits the amount of channels displayed on the select menu dropdown.</Tip>
+  </Tab>
+</Tabs>
+
+##  Using the Module
+
+| Command        | Description                                                                    |                   
+| -------------- | --------------------------------------------------------------------------     |
+| `/punishment issue` | Allows department **supervisors** to issue punishments                    |
+| `/punishment search`| Allows department **supervisors** to search punishment cases.             |
+| `/punishment void`  | Allows department **high commanders** to void (delete) punishment cases.  |
+| `/promotion issue`  | Allows department **supervisors** to issue a promotion.                   |
+
+### Using `/punishment issue`
+When you type in the command `/punishment issue`, you will get three (3) **required** options:
+> - `staff-member`
+> - `punishment-type`
+> - `punishment-reason`
+
+And you will also get one (1) **optional** option to add a **note** to the punishment.
+<Tip>If you do not set a note, it will be autofilled as "No additional notes were provided.".</Tip>
+When you input all this information, an embed will be generated and sent to the logging channel and the user. If the user cannot be DMed, it will skip this step.
+
+### Using `/punishment search`
+When you run the command `/punishment search` you will be asked to provide an `id`. To find this punishment identification string, please locate the log you are attempting to search. Once you run the command, the punishment you have searched will display all information provided when it was made.
+<Info>We have plans to implement a user search to offer a different option other than the identification string.</Info>
+
+### Using `/punishment void`
+When voiding a punishment using `/punishment void`, you are **required** to provide the punishment identification string. Once you run the command, the punishment will be deleted.
+<Warning>This command has no confirmation and once the punishment is voided, it cannot be accessed again.</Warning>
+
+### Using `/promotion issue`
+When promoting a user, you will be promoted to provide the following **required** information:
+> - `staff-member`
+> - `new-role`
+
+You have the option to provide an **optional** note to the promotion. When all the information is provided an embed will be generated and a message will be sent to the user promoted. If the user cannot be DMed, this step will be skipped.
