@@ -50,6 +50,10 @@
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
   },
+  "appearance": {
+    "default": "dark",
+    "strict": true
+  },
   "footer": {
     "socials": {
       "discord": "https://discord.gg/8XScx8MNfE"
