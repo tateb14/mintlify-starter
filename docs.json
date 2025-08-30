@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "Crab Documentation",
   "colors": {
-    "primary": "#b81e37",
-    "light": "#b81e37",
-    "dark": "#b81e37"
+    "primary": "#ec3935",
+    "light": "#ec3935",
+    "dark": "#ec3935"
   },
   "favicon": "/favicon.svg",
   "styling": {
