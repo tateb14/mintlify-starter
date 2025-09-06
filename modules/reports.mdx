@@ -18,7 +18,7 @@ To begin the configuration, please open the dropdown menu and select **"Reports"
 | Command        | Description                                                                    |                   
 | -------------- | --------------------------------------------------------------------------     |
 | `/report create` | Open our report creation panel and specify what type of report you wish to create. |
-| `/report search`| Search a report using an identification string and display the information of it.   |
+| `/report search`| Search a report using a user and display the information of it.   |
 | `/report void`  | Allows department **high commanders** to void (delete) a report.  |
 
 ### Using `/report create`
@@ -41,9 +41,8 @@ When you run the `/report create` command, a panel will appear which will allow 
 Simply select which report to fill out and then a form will appear. In this form, you will need to fill out a description of the report. For example, you will need to write a description for the accident report. Once filed, it will be sent to be review by a department **supervisor** or above.
 
 ### Using `/report search`
-When you run the command `/record search` you will be asked to provide a `report-id`. You can find this id in the report log.
-<Info>We have plans to add the ability to search via the member in the near future..</Info>
+When you run the command `/record search` you will be asked to provide a `staff-username`. This will display the most recent 10 logs.
 
 ### Using `/report void`
-When voiding a punishment using `/report void`, you are **required** to provide the report identification string. Once you run the command, the report will be deleted.
-<Warning>This command has no confirmation and once the report is voided, it cannot be accessed again.</Warning>
+When voiding a report using `/report void`, you are **required** to provide the punishment identification string. Once you run the command, you will be promopted to **confirm or cancel** the deletion. Simply click **Confirm Delete** to delete the report and **Cancel Delete** to cancel the deletion. 
+
